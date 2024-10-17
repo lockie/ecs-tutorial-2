@@ -1,0 +1,33 @@
+* ECS Tutorial 2
+
+[[https://gitlab.com/lockie/cl-fast-ecs/-/wikis/tutorial-2][The tutorial]]
+
+** Installation
+
+Just grab binaries from [[https://github.com/lockie/ecs-tutorial-2/releases][releases section]].
+
+** Minimum system requirements
+
++ Windows 7 SP1, MacOS Monterey or Ubuntu 20.04
++ 2 GB of RAM
++ 60 Mb of free disk space
+
+** Author
+
++ Andrew Kravchuk (awkravchuk@gmail.com)
+
+** Credits
+
++ [[https://fonts.google.com/specimen/Inconsolata/about][Inconsolata font]]
++ [[https://fonts.google.com/specimen/Alegreya+SC][Alegreya SC font]]
++ [[https://nijikokun.itch.io/dungeontileset-ii-extended][Dungeon Tileset II - Extended]]
++ [[https://kenney.nl/assets/fantasy-ui-borders][Fantasy UI Borders]]
++ [[http://tango.freedesktop.org][Tango icons]]
+
+** Copyright
+
+Copyright (c) 2024 Andrew Kravchuk (awkravchuk@gmail.com)
+
+** License
+
+Licensed under the MIT License.

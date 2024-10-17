@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="15">
+ <tileset firstgid="1" source="dungeontileset-extended2.tsx"/>
+ <layer id="1" name="floor" width="40" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzVl9tOwkAQhruHKxCFV6IKCQfRV4Jgk3oA3kkxKSj4Rv5NdrLTTROomux48aXb3ZnyZYZuW62SRP8zbmySZCcY2GY5lXhdjQ+vVUdm/HiJ+CHjnUFzD8E1l7+I52uvwbEkBRaYE7l87a/m69ZCyO+c3Jh+fYF+qevrHCwE+nFPif21rL9WqF/LHdsC/FqONosdgbEjtt+I+VD9cvDoiO2XMx+aK8DOEduvYD7luXE1vFb+HpZ0f/D9ReL+lyq/v0itn1HVZ7AkPxt4SvOjHpszc2PU7wrvs13Q0/H9LuDQAZfa+80wvgP3AvwmcJiCW+3/cyuM12AjwO8JDs/gRfu5A8ZH8NXAryRj/DQ+zNnD4QN8svpRn2n/e7P++2Yb/B5fq6NpfF0Oh55vWlXfUWND32/fQVXiww==
+  </data>
+ </layer>
+ <layer id="4" name="walls" width="40" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztzgEKgCAMBVDJk5UeLT1Z3qsJCku2yEiK+IOPCd/1gjVmMcc4ykbx5TsnlZP3vHDWJPae9+s+3nXC7pUSyRZaH917xnX240l/trKPz9u+tnvVNyk7NZ/WH+XT9mo+rQ8ffPDBBx988MEHH3wjfdr09vP8wffU/+74pB1f9+37IVqd
+  </data>
+ </layer>
+ <layer id="5" name="decor" width="40" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgaALiCcwMDBOBGBvwgtLe2KVRALIaLxxqDjEi2B2MqHIwdxxC03MBKHYRh/voCQaLO4YKuMJKHXM6STSHVPWUgpMk2keq+lEwCkbBKBgFo2AUjAJ6gdF2FyrggNKXsZjDyogphg+Qqp6DsBIGDzxyriTad5RE9fjshoEOPHKtpIYfE2nq8dk9WAEAuAETzQ==
+  </data>
+ </layer>
+ <layer id="7" name="shadows" width="40" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt1jENAAAIwDAuEvwb5kADgaO9J2AR8F/lbg8AwPBdcKcB+AcAPQ==
+  </data>
+ </layer>
+ <objectgroup id="6" name="objects">
+  <object id="1" gid="152" x="32" y="128" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="100"/>
+     </properties>
+    </property>
+    <property name="player" type="class" propertytype="player"/>
+   </properties>
+  </object>
+  <object id="2" gid="1686" x="32" y="96" width="32" height="32">
+   <properties>
+    <property name="narrative" type="class" propertytype="narrative">
+     <properties>
+      <property name="text" value="Press W A S D to move"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="3" gid="1686" x="96" y="256" width="32" height="32">
+   <properties>
+    <property name="narrative" type="class" propertytype="narrative">
+     <properties>
+      <property name="text" value="Press E to read the sign again"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="4" gid="388" x="1184" y="96" width="32" height="32">
+   <properties>
+    <property name="narrative" type="class" propertytype="narrative">
+     <properties>
+      <property name="text" value="Congratulations, you won by escaping the dungeon!"/>
+     </properties>
+    </property>
+    <property name="win" type="class" propertytype="win"/>
+   </properties>
+  </object>
+  <object id="5" gid="1686" x="192" y="736" width="32" height="32">
+   <properties>
+    <property name="narrative" type="class" propertytype="narrative">
+     <properties>
+      <property name="text" value="If the demon catches you, the game is over. Fortunately, demons are slow and easy to trick."/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="6" gid="216" x="256" y="512" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="20"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="192"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="7" gid="216" x="384" y="736" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="32"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="90"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="8" gid="216" x="640" y="288" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="24"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="200"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="9" gid="216" x="1056" y="128" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="26"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="400"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="10" gid="216" x="992" y="192" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="26"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="380"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="11" gid="216" x="832" y="480" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="20"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="190"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="12" gid="216" x="960" y="768" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="18"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="128"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="13" gid="216" x="992" y="96" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="26"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="420"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+  <object id="14" gid="216" x="1216" y="512" width="32" height="32">
+   <properties>
+    <property name="character" type="class" propertytype="character">
+     <properties>
+      <property name="speed" type="float" value="32"/>
+     </properties>
+    </property>
+    <property name="enemy" type="class" propertytype="enemy">
+     <properties>
+      <property name="attack-range" type="float" value="24"/>
+      <property name="vision-range" type="float" value="90"/>
+     </properties>
+    </property>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
