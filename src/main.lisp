@@ -20,7 +20,7 @@
 (define-constant +config-path+ "../config.cfg" :test #'string=)
 
 (defun init ()
-  (ecs:bind-storage)
+  (ecs:make-storage)
   (load-ui)
   (load-map "level1.tmx")
   (trivial-garbage:gc :full t))
